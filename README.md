@@ -1,4 +1,4 @@
-# Git Branches by Date
+# Branches
 
 A Dart application that helps you manage git branches sorted by their last commit date.
 
@@ -14,7 +14,7 @@ A Dart application that helps you manage git branches sorted by their last commi
 
 1. Clone this repository
 2. Run `dart pub get` to install dependencies
-3. Run `dart compile exe bin/git_branches_by_date.dart -o git_branches_by_date`
+3. Run `dart compile exe bin/branches.dart -o branches.exe`
 4. Add the compiled executable to your PATH
 
 ## Usage
@@ -22,13 +22,13 @@ A Dart application that helps you manage git branches sorted by their last commi
 Run in any git repository:
 
 ```bash
-git_branches_by_date
+branches
 ```
 
 Or specify a directory:
 
 ```bash
-git_branches_by_date --dir=/path/to/git/repo
+branches --dir=/path/to/git/repo
 ```
 
 ## Set up as Git Alias
@@ -36,13 +36,13 @@ git_branches_by_date --dir=/path/to/git/repo
 You can set this up as a git alias to replace your existing shell script:
 
 ```bash
-git config --global alias.branches-by-date '!git_branches_by_date'
+git config --global alias.branches '!branches'
 ```
 
 Then you can run:
 
 ```bash
-git branches-by-date
+git branches
 ```
 
 ## Development
